@@ -4,10 +4,10 @@ links:
     url: "https://resume.shreyasgokhale.com"
     desc: My portfolio
   - title: Join my travel
-    url: "https://travel.shreyasgokhale.com"
+    url: "https://blog.shreyasgokhale.com"
     desc: Travelogs about my adventures in the world.
   - title: Judge my tech
-    url: "https://tech.shreyasgokhale.com"
+    url: "https://blog.shreyasgokhale.com"
     desc: Tech writeups about different tech projects, observations etc.
   - title: GSoC '20 Blog 
     url: "https://gsoc.shreyasgokhale.com"

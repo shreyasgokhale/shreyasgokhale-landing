@@ -1,3 +1,21 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+[[redirects]]
+  from = "/travelogues"
+  to = "https://blog.shreyasgokhale.com"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/tech-blog"
+  to = "https://blog.shreyasgokhale.com//tech-blog"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/faq-eit-digital-masters"
+  to = "https://blog.shreyasgokhale.com/faq-eit-digital-masters"
+  status = 301
+  force = false
