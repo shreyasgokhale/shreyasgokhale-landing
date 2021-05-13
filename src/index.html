@@ -1,22 +1,26 @@
 ---
 layout: default
-title: Neat Starter
+title: Shreyas Gokhale
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<div class="bg-white dark:bg-gray-800 border-b">
+  <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+    <h1 class="text-gray-900 dark:text-white">
+      Welcome
+      <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+        visitor
+      </strong>
+    </h1>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+    <h2  class="text-gray-900 dark:text-white">
+      You have reached the landing page of <a href="https://shreyagokhale.com" class="underline">Shreyas Gokhale</a>!
+    </h2>
 
-  {% include "./_includes/partials/content.html" %}
+    <p class="text-gray-600 dark:text-gray-300">
+      Choose one of the options below
+    </p>
+
+    {% include "./_includes/partials/content.html" %}
+  </div>
 </div>
