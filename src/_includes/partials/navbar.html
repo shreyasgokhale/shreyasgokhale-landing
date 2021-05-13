@@ -3,7 +3,7 @@
         x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <!--Logo etc-->
         <div class="flex items-center">
-            <a href="/" class="text-indigo-500 font-bold text-lg">
+            <a href="/" class="text-indigo-300 font-bold text-lg">
                 SG</a>
         </div>
 
@@ -39,7 +39,7 @@
             {% endif %}
         </div>
         <div>
-            <button onclick="toggleDarkMode()" id="switchTheme"
+            <button name="DarkModeToggle" onclick="toggleDarkMode()" id="switchTheme"
                 class="h-10 w-10 flex justify-center items-center focus:outline-none text-yellow-500">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
