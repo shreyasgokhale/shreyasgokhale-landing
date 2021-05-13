@@ -1,14 +1,14 @@
 ---
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: Hire Me!
+    url: "https://resume.shreyasgokhale.com"
+    desc: My portfolio
+  - title: Join my travel
+    url: "https://travel.shreyasgokhale.com"
+    desc: Travelogs about my adventures in the world.
+  - title: Judge my tech
+    url: "https://tech.shreyasgokhale.com"
+    desc: Tech writeups about different tech projects, observations etc.
+  - title: GSoC '20 Blog 
+    url: "https://gsoc.shreyasgokhale.com"
+    desc: Fork of the original blogs written for Google Summer of Code 2020 @JdeRobot
