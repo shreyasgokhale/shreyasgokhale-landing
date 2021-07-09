@@ -3,12 +3,12 @@ links:
   - title: Hire Me!
     url: "https://resume.shreyasgokhale.com"
     desc: My portfolio
-  - title: Join my travels
-    url: "https://blog.shreyasgokhale.com"
-    desc: Travelogs about my adventures in the world.
-  - title: Judge my tech
-    url: "https://blog.shreyasgokhale.com"
-    desc: Tech writeups about different tech projects, observations etc.
+  - title: Scribbles by Shreyas
+    url: "https://scribbles.shreyasgokhale.com"
+    desc: Analects of my travels and thoughts 
+  - title: Subroutines by Shreyas
+    url: "https://subroutines.shreyasgokhale.com"
+    desc: Writeups about different tech projects, observations etc.
   - title: GSoC '20 Blog 
     url: "https://gsoc.shreyasgokhale.com"
     desc: Fork of the original blogs written for Google Summer of Code 2020 @JdeRobot
