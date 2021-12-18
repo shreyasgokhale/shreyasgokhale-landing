@@ -1,38 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    {% block head %}{% endblock %}
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
-    
-    <script async defer data-domain="shreyasgokhale.com" src="https://analytics.cloud.shreyasgokhale.com/js/plausible.js"></script>
+<html lang='en'>
 
-  </head>
-  <body>
-    {% include "./partials/navbar.html" %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{title}}
+  </title>
+  {% if description %}
+  <meta name="description" content="{{description}}" />
+  {% endif %}
+  {% block head %}{% endblock %}
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  {% if prism == true %}
+  <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+  {% endif %}
 
-    {{ content | safe }}
+  <script async defer data-domain="shreyasgokhale.com"
+    src="https://analytics.cloud.shreyasgokhale.com/js/plausible.js"></script>
+  <script>
+    function setDefaultMode() {
 
-    {% include "./partials/footer.html" %}
+      if ('theme' in localStorage) {
+        if (localStorage.theme === 'dark')
+          document.documentElement.classList.add('dark')
+        if (localStorage.theme === 'light')
+          document.documentElement.classList.remove('dark')
+      }
+      // else {
+      //   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      //     document.documentElement.classList.add('dark')
+      //     localStorage.theme = 'dark'
+      //   }
+      //   if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      //     document.documentElement.classList.remove('dark')
+      //     localStorage.theme = 'light'
+      //   }
+      // }
 
-    <script src="/static/js/alpine.js"></script>
+    }
+    setDefaultMode();
 
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
+    // function toggleDarkMode() {
+    //   if (localStorage.theme === 'dark') {
+    //     // Whenever the user explicitly chooses light mode
+    //     localStorage.theme = 'light'
+    //     document.documentElement.classList.remove('dark')
 
-  </body>
+    //   } else {
+    //     // Whenever the user explicitly chooses dark mode
+    //     localStorage.theme = 'dark'
+    //     document.documentElement.classList.add('dark')
+    //   }
+    // };
+
+    function lightMode() {
+      localStorage.theme = 'light'
+      document.documentElement.classList.remove('dark')
+    };
+
+    function darkMode() {
+      localStorage.theme = 'dark'
+      document.documentElement.classList.add('dark')
+    };
+  </script>
+</head>
+
+<body>
+  {% include "./partials/navbar.html" %}
+
+  {{ content | safe }}
+
+  {% include "./partials/footer.html" %}
+
+  <script src="/static/js/alpine.js"></script>
+
+  {% if path == "home" %}
+
+  {% endif %}
+
+</body>
+
 </html>

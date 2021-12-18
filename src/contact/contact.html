@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="bg-gray-200 dark:bg-gray-800 border-b">
+  <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+
+  <h3 class="text-black dark:text-white"> Contact Me →</h3>
+
+  <form
+    class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-1 gap-2 my-2 px-2 lg:mx-0 text-gray-600 dark:text-gray-300"
+    name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <label  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500" for="name">Name</label>
+    <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" title="Please enter your name"
+      required>
+    <label  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500" for="email">Email</label>
+    <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address"
+      title="The domain portion of the email address is invalid (the portion after the @)."
+      pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+      required>
+    <label  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500" for="phone">Phone</label>
+    <input  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500" type="text" name="phone" id="phone" autocomplete="tel-national" placeholder="A contact number, optional">
+    <label  class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500" for="message">Message</label>
+    <textarea name="message" id="message" placeholder="Write your message here" rows="7" required></textarea>
+    <div data-netlify-recaptcha="true"></div>
+    <button class="p-5 border rounded border-gray-200 hover:border-purple-400" type="submit" name="submit">Send Message</button>
+  </form>
+</div>
+</div>
