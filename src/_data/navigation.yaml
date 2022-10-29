@@ -10,3 +10,5 @@ items:
     url: "https://github.com/shreyasgokhale"
   - text: GitLab
     url: "https://gitlab.com/shreyasgokhale"
+  - text: Mastodon
+    url: "https://fosstodon.org/@elementaryshr"
